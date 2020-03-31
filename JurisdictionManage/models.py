@@ -9,4 +9,5 @@ class Jurisdiction(models.Model):
     identification = models.CharField(max_length=254, unique=True)
 
     class Meta:
+        ordering = ['name']
         db_table = 'jurisdiction'

@@ -8,7 +8,7 @@
 FROM python:3.8
 MAINTAINER "ahri"<ahriknow@ahriknow.cn>
 ADD manage.py /project/manage.py
-ADD db.sqlite3 /project/db.sqlite3
+ADD db/db.sqlite3 /project/db.sqlite3
 ADD AhriAuth /project/AhriAuth
 ADD AuthManage /project/AuthManage
 ADD DeptManage /project/DeptManage

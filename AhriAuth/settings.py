@@ -101,6 +101,7 @@ CORS_ALLOW_HEADERS = (
     'x-csrftoken',
     'x-requested-with',
     'Pragma',
+    'token',
 )
 
 WSGI_APPLICATION = 'AhriAuth.wsgi.application'
@@ -111,7 +112,7 @@ WSGI_APPLICATION = 'AhriAuth.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db/db.sqlite3'),
     }
 }
 
